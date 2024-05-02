@@ -1,0 +1,18 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "ResourceData", menuName = "Map/ResourceData", order = 1)]
+public class ResourceData : ScriptableObject
+{
+    public string Name;
+    
+    [range(0, 10)]
+    public int Hardness     = 5;
+    public int MaxQuantity  = 100;
+    public int MinQuantity  = 0;
+    [range(MaxQuantity, MinQuantity)]
+    public int Quantity;
+    [range(0, 100)]
+    public int Value = 50;
+    public GameObject Prefab;
+    // Add other tile properties as needed
+}

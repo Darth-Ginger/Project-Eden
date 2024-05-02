@@ -1,0 +1,18 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "WorldData", menuName = "Map/WorldData", order = 1)]
+public class WorldData : ScriptableObject
+{
+    public string WorldName;
+    public string WorldSeed;
+    
+    // Possible Optional World Attributes
+    [hideInInspector]
+    public int    WorldAge;
+
+    public ResourceDataSO[] Resources;
+
+    public TerrainTypeSO[] TerrainTypes;
+
+}
+

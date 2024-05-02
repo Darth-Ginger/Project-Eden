@@ -1,0 +1,11 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "TileData", menuName = "Map/TileData", order = 1)]
+public class TileData : ScriptableObject
+{
+    public string Name;
+    public TerrainTypeSO TerrainType;
+    public GameObject Prefab;
+   
+    // Add other tile properties as needed
+}
